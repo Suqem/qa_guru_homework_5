@@ -2,7 +2,7 @@ import os
 from selene import browser, have, be
 
 
-def test_chek_form(browser_config):
+def test_check_form():
     browser.open('/automation-practice-form')
     browser.element('#firstName').click().should(be.blank).type('Mikhail')
     browser.element('#lastName').click().should(be.blank).type('Sidorkin')
